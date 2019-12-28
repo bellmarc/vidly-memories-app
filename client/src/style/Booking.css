@@ -1,0 +1,29 @@
+.local-booking-pro-container {
+  background-color: rgba(0, 162, 174, 0.17);
+  min-height: 100vh;
+}
+.booking-header-options {
+  padding-top: 10px;
+  font-family: "Jomolhari", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pro-list-container {
+  /* background-color: #235668; */
+  background-color: rgba(0, 20, 40, 0.6);
+  border-radius: 8px;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid;
+}
+.pro-name,
+.pro-name-text,
+.pro-email-text {
+  color: whitesmoke;
+  font-family: "Jomolhari", sans-serif;
+  margin: 10px;
+}

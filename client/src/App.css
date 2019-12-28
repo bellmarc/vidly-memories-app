@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Jomolhari|Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  position: relative;
+  background: #e3d5e0;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+html,
+body {
+  /* background: #e3d5e0; */
+  /* color: #428dff; */
+}

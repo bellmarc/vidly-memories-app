@@ -1,0 +1,63 @@
+.login-form-container {
+  margin-top: 30px;
+  background: rgba(0, 162, 174, 0.17);
+  min-height: 100vh;
+  min-width: 100%;
+}
+.login-header {
+  display: flex;
+  padding-left: 18px;
+  padding: 20px;
+  font-size: 24px;
+  line-height: 0.8;
+}
+.mw5 {
+  height: 60vh;
+}
+.login-form {
+  margin: 20px;
+  /* background: #00B4DB; */
+}
+.ant-btn-primary {
+  border-radius: 24px;
+}
+.signup-link-btn {
+  color: #00b4db;
+}
+.login-form-button {
+  margin: 20px;
+}
+
+@media only screen and (min-width: 750px) {
+  .login-form {
+    margin-top: 60px;
+    height: 20vh;
+  }
+  .login-header {
+    font-size: 28px;
+  }
+  .mw5 {
+    margin-top: 40px;
+    min-width: 40vw;
+  }
+  .login-form-button {
+    margin: 30px;
+    font-size: 18px;
+  }
+  .signup-link-btn {
+    color: #00b4db;
+  }
+}
+
+@media only screen and (min-height: 750px) {
+  .login-form {
+    margin-top: 60px;
+    height: 40vh;
+  }
+  .login-header {
+    font-size: 28px;
+  }
+  .mw5 {
+    min-width: 40vw;
+  }
+}

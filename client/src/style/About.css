@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Jomolhari|Lato&display=swap");
+
+.about-container {
+  background: rgba(118, 145, 172, 0.86);
+  min-height: 100vh;
+}
+
+.about-vid-banner {
+  width: 40vw;
+  height: 40vh;
+  object-fit: cover;
+}
+.about-vid-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.about-header {
+  margin: 8px;
+  font-size: 18px;
+  font-family: "Jomolhari", serif;
+  font-weight: bold;
+  padding: 10px;
+  color: whitesmoke;
+}
+.about-text {
+  padding: 20px;
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+.about-header-two {
+  margin: 8px;
+  font-size: 18px;
+  font-family: "Jomolhari", serif;
+  font-weight: bold;
+  padding: 10px;
+  color: whitesmoke;
+}
+.about-content-two {
+  padding: 50px;
+}
+.about-text-two {
+  padding: 20px;
+  font-size: 14px;
+  color: whitesmoke;
+}
+.user {
+  display: flex;
+  margin: 15px;
+  padding: 10px;
+  width: 85px;
+  height: 100px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.one {
+  background-image: url("../assets/founder-profile.jpg");
+}
+
+@media only screen and (min-width: 750px) {
+  .about-vid-banner {
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .about-header {
+    margin: 20px;
+    font-size: 40px;
+  }
+  .about-text {
+    padding: 20px;
+    margin: 50px;
+    font-size: 32px;
+  }
+
+  .about-header-two {
+    margin: 20px;
+    font-size: 40px;
+  }
+  .about-text-two {
+    padding: 20px;
+    margin: 50px;
+    font-size: 32px;
+  }
+  .user {
+    margin: 40px;
+    padding: 10px;
+    width: 180px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-height: 750px) {
+  .about-vid-banner {
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .about-header {
+    margin: 30px;
+    font-size: 40px;
+  }
+  .about-text {
+    padding: 20px;
+    margin: 50px;
+    font-size: 32px;
+  }
+
+  .about-header-two {
+    margin: 30px;
+    font-size: 40px;
+  }
+  .about-text-two {
+    padding: 20px;
+    margin: 50px;
+    font-size: 32px;
+  }
+  .user {
+    margin: 40px;
+    padding: 10px;
+    width: 220px;
+    height: 250px;
+  }
+}

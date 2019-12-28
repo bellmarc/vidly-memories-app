@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Jomolhari|Lato&display=swap");
+.landing-container {
+  opacity: none;
+}
+.vidly-intro {
+  color: #001428;
+}
+.lazy-hero {
+  min-height: 100vh;
+  width: 100vw;
+  opacity: none;
+}
+.overlay-text h1 {
+  margin: 0;
+  color: white;
+}
+.overlay {
+  background-color: rgba(254, 167, 101, 0.12);
+  height: 100vh;
+  width: 100vw;
+}
+.overlay-text {
+  padding-top: 45px;
+}
+.jIyzwq {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.register-page-link-btn {
+  padding: 6px;
+  border-radius: 24px;
+  background: none;
+  border: 2px solid #001428;
+  color: #0077aa;
+}
+.register-page-link-btn:hover {
+  border: 2px solid white;
+  color: #001428;
+}
+/* .ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple .rippleContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.ripple .rippleContainer span {
+  transform: scale(0);
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0.75;
+  background-color: #ffffff;
+  animation: ripple 850ms;
+} */
+
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+.vidly-ani span {
+  font-family: "Jomolhari", serif;
+  padding: 6px;
+  font-weight: bold;
+  animation: animate 1s infinite alternate;
+  color: white;
+}
+.loading08 span {
+  position: relative;
+  color: rgba(0, 0, 0, 0.2);
+  animation: loading08-parent 5s infinite;
+}
+.loading08 span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-text);
+  color: #fff;
+  opacity: 0;
+  animation: loading08-child 5s infinite;
+}
+.loading08 span:nth-child(2)::after {
+  animation-delay: 0.2s;
+}
+.loading08 span:nth-child(3)::after {
+  animation-delay: 0.4s;
+}
+.loading08 span:nth-child(4)::after {
+  animation-delay: 0.6s;
+}
+.loading08 span:nth-child(5)::after {
+  animation-delay: 0.8s;
+}
+.loading08 span:nth-child(6)::after {
+  animation-delay: 1s;
+}
+.loading08 span:nth-child(7)::after {
+  animation-delay: 1.2s;
+}
+@keyframes loading08-parent {
+  0%,
+  35%,
+  100% {
+    color: #235668;
+  }
+  60%,
+  80% {
+    color: #fff;
+  }
+}
+@keyframes loading08-child {
+  0% {
+    opacity: 1;
+  }
+  25%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-height: 500px) and (min-width: 500px) {
+  .vidly-ani span {
+    padding: 10px;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 750) {
+  .vidly-ani {
+    padding: 10px;
+    font-size: 52px;
+  }
+  .overlay-text {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-height: 750) {
+  .vidly-ani span {
+    padding: 10px;
+    font-size: 62px;
+  }
+  .overlay-text {
+    font-size: 30px;
+  }
+}
