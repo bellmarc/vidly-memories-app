@@ -21,7 +21,9 @@ class Booking extends React.Component {
                         <h4 className="pro-email-text">{pro.email}</h4>
                     {/* <h4>{pro.userType}</h4> */}
                     </div>
-                    
+                    <div className="pro-image">
+                        <img src={pro.imgURL} className="pro-img-url" alt="professional videographer headshot"/>
+                    </div>
                 </div>
                 )}
             </div>

@@ -22,7 +22,7 @@ const userSchema = new Schema({
     type: String,
     description: String
   },
-  imageURL: String,
+  imgURL: String,
   userType: {
     type: String,
     enum: ["customer", "professional"],
