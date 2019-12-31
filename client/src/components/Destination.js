@@ -17,7 +17,9 @@ class Destination extends React.Component {
         // console.log(this.props.users[0] && this.props.users[0].location )
         return(
             <div className="destination-container">
-                <h2 className="destination-header-text">Destinations</h2>
+                <section className="destination-header-section">
+                    <h2 className="destination-header-text">Destinations</h2>
+                </section>
                 {this.props.locations.map(location =>
                 <Link to={`/booking/${location.name}`}><div className="location-text" key={location.id + "-" + location}><h3>{location.name}</h3><img src={location.imgURL} alt="famous tourist shots of various countries" width={400} key={location.id + "-" + location.imgURL}/></div>
                 </Link>
