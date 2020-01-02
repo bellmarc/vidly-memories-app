@@ -28,7 +28,7 @@
 .location-text {
   font-family: "Jomolhari", sans-serif;
   font-size: 18px;
-  padding: 20px;
+  padding: 35px;
 }
 .location-text img {
   border-radius: 8px;
@@ -38,7 +38,7 @@
 }
 
 .location-text img:active {
-  background-color: bisque;
+  background-color: #fff7ee;
 }
 
 @media only screen and (min-width: 360px) {

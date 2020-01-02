@@ -11,7 +11,11 @@ class Booking extends React.Component {
     render() {
         return (
             <div className="local-booking-pro-container">
-                <h2 className="booking-header-options">Local Videographers</h2>
+                <section className="booking-header-section">
+                    <h2
+                    className="booking-header-locals">Local Videographers
+                </h2>
+                </section>
                 {this.props.pros.map(pro =>
                 <div className="pro-list-container">
                     <div className="pro-name">

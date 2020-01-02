@@ -19,7 +19,7 @@
 }
 .about-header {
   margin: 8px;
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Jomolhari", serif;
   font-weight: bold;
   padding: 10px;
@@ -27,31 +27,32 @@
 }
 .about-text {
   padding: 20px;
-  font-size: 14px;
+  font-size: 18px;
   color: whitesmoke;
 }
 
 .about-header-two {
-  margin: 8px;
-  font-size: 18px;
+  margin: 0px;
+  font-size: 24px;
   font-family: "Jomolhari", serif;
   font-weight: bold;
   padding: 10px;
   color: whitesmoke;
 }
-.about-content-two {
-  padding: 50px;
+.about-content-two,
+.about-content {
+  padding: 20px;
 }
 .about-text-two {
   padding: 20px;
-  font-size: 14px;
+  font-size: 18px;
   color: whitesmoke;
 }
 .user {
   display: flex;
-  margin: 15px;
+  margin: 20px;
   padding: 10px;
-  width: 85px;
+  width: 90px;
   height: 100px;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -60,6 +61,20 @@
 }
 .one {
   background-image: url("../assets/founder-profile.jpg");
+}
+
+@media only screen and (min-width: 375px) {
+  .about-header-two {
+    margin: 0px;
+    font-size: 18px;
+  }
+  .about-content {
+    padding: 0px;
+  }
+  .about-text {
+    margin: 0px;
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -75,7 +90,7 @@
   .about-text {
     padding: 20px;
     margin: 50px;
-    font-size: 32px;
+    font-size: 38px;
   }
 
   .about-header-two {
