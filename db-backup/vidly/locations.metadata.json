@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"vidly.locations"}],"uuid":"0e39a3c118e4445ca715bdcc997d39e9"}
