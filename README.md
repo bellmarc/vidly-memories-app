@@ -10,20 +10,22 @@ description: View the slide with "Slide Mode".
 
 slide: https://hackmd.io/p/vidly-talk-slide
 
+<iframe src="https://drive.google.com/file/d/1B8p1KEQ82G6dAKJjqdtIR3JO8Nh2kgx7/preview" width="640" height="480"></iframe>
 ---
+
 
 ### What I'm Building:
 
-A platform to connect professional videographers/cinematographers to users who seek their services to capture their special moments (weddings), family memories, or document their journey abroad. Packages available | Time: 30 mins-2hrs, (set pricing), dates/specific time up to individual videographers. Local videographers know the areas well and can take individuals or families to best shooting locations.
+A platform to connect professional videographers/cinematographers to users who seek their services to capture their special moments (weddings), family memories, or document their journey abroad. Packages available | Specific timeframe, dates/specific time up to individual videographers. Local videographers know the areas well and can take individuals or families to best shooting locations.
 
-My audience would be expand to reach international adventurers, social media-influencers, couples, and family travelers who would like less stress since they don't have to bring equipment along their trip overseas.
+The audience would reach international adventurers, social media-influencers, couples, and family travelers who would like less stress since they don't have to bring equipment along their trip overseas.
 
 ---
 
 ## Who am I?
 
-- Full-stack Software engineer
-- Technologies include: React.js, Express, Node.js, and MongoDB
+- Nice to e-meet you. I'm Marc, a Software engineer
+- Technologies include: React.js, Express, Node.js, mongoose, and MongoDB
 
 ---
 
@@ -54,7 +56,7 @@ Testimonial page
 - Chat
 - Mailchimp integration
 - Splash page w/Video
-- Vetting/Signup process | Portfolio upload submission for videographer professionals
+- Vetting/Sign up process | Portfolio upload submission for videographer professionals
 - Request a location for services (user) Search feature
 - FAQ
 - Customer Service (bot/live/remote service)
@@ -187,10 +189,10 @@ const getUserBooking = () => {
 
 ---
 
-### API
+### MongoDB Data
 
-This project will be built using a Mock Data (Data present in local MongoDB):
-
-
-- [My GitHub](https://github.com/bellmarc/vidly-memories-app)
+This project will be built using Mock Data (Data present in local MongoDB):
+---
 ```
+[My GitHub](https://github.com/bellmarc/vidly-memories-app)
+
