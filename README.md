@@ -29,7 +29,7 @@ My audience would be expand to reach international adventurers, social media-inf
 
 ### MVP(Minimum Viable Product):
 
-- A book now feature, brief graphic explanation of the service offered, a list of popular travel locations w/ filter for associated professionals who can capture hi-quality memories(videos) for users.
+- A registration/login feature complete with JWT(JSOn Web Token) authentication, brief graphic explanation of the service offered, a list of popular travel locations w/ filter for associated professionals who can capture hi-quality memories(videos) for users.
 
 #### User stories
 
@@ -41,12 +41,12 @@ My audience would be expand to reach international adventurers, social media-inf
 - If User selects a Travel Destination card(by popularity), they may view all videographers shooting in that region to consider booking.
 - Email list for sign-up discount/offers, what's new
 
--Signup as customer/professional & customer can make booking with professional, the profile page will show customers booking & vice versa.
+-Sign-up as customer/professional & customer can make booking with professional, the profile page will show customers booking & vice versa.
 -Static pages: Homepage process w/images
 Testimonial page
 -Make fake pros from diff locations & only locations that are signed up by pros will be found by customers.
 
-##### Other features:
+##### Other future features:
 
 - Book to Checkout (Stripe/Paypal)integration
 - Calender for available dates
@@ -54,7 +54,7 @@ Testimonial page
 - Chat
 - Mailchimp integration
 - Splash page w/Video
-- Vetting/Signup process | Porfolio upload submission for videographer professionals
+- Vetting/Signup process | Portfolio upload submission for videographer professionals
 - Request a location for services (user) Search feature
 - FAQ
 - Customer Service (bot/live/remote service)
@@ -72,7 +72,7 @@ Testimonial page
   - GoogleMaps Integration
   - Payment (Paypal, checkout process)
 - Added context (UserProvider)
-  - using Hooks
+  - using React Hooks
 
 ---
 
