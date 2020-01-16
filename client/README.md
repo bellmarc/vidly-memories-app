@@ -1,68 +1,196 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+title: FullStack Vidly App Project
+tags: Templates, Talk
+description: View the slide with "Slide Mode".
+---
 
-## Available Scripts
+# React.js FullStack Vidly App Project Proposal
 
-In the project directory, you can run:
+<!-- Put the link to this slide here so people can follow -->
 
-### `yarn start`
+slide: https://hackmd.io/p/vidly-talk-slide
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### What I'm Building:
 
-### `yarn test`
+A platform to connect professional videographers/cinematographers to users who seek their services to capture their special moments (weddings), family memories, or document their journey abroad. Packages available | Time: 30 mins-2hrs, (set pricing), dates/specific time up to individual videographers. Local videographers know the areas well and can take individuals or families to best shooting locations.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My audience would be expand to reach international adventurers, social media-influencers, couples, and family travelers who would like less stress since they don't have to bring equipment along their trip overseas.
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Who am I?
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Full-stack Software engineer
+- Technologies include: React.js, Express, Node.js, and MongoDB
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+### MVP(Minimum Viable Product):
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- A book now feature, brief graphic explanation of the service offered, a list of popular travel locations w/ filter for associated professionals who can capture hi-quality memories(videos) for users.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### User stories
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- User views landing page and will view all popular destinations
+- User is prompted to click 'Book Now', explains booking process
+- User views navigation bar featuring 'Home', About', 'Search', & 'Register/Sign-Up'
+- Home page displays all popular listings i.e. Tokyo, Sydney, Bali & videographer cards w/ profile image, associated with each location & professional
+- On hover the professional's imageBg will animate to video
+- If User selects a Travel Destination card(by popularity), they may view all videographers shooting in that region to consider booking.
+- Email list for sign-up discount/offers, what's new
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-Signup as customer/professional & customer can make booking with professional, the profile page will show customers booking & vice versa.
+-Static pages: Homepage process w/images
+Testimonial page
+-Make fake pros from diff locations & only locations that are signed up by pros will be found by customers.
 
-## Learn More
+##### Other features:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Book to Checkout (Stripe/Paypal)integration
+- Calender for available dates
+- -Verification (Pros)
+- Chat
+- Mailchimp integration
+- Splash page w/Video
+- Vetting/Signup process | Porfolio upload submission for videographer professionals
+- Request a location for services (user) Search feature
+- FAQ
+- Customer Service (bot/live/remote service)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Content script
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Minimum of Home, Search, Payment linked pages
+- Two Different APIs
+- React Components:
+  - Home (BookNow, Destinations)
+  - About (brief intro on front page)
+  - Search [popularLocations, listOfVideographersByLocation, DestinationsByName],
+  - GoogleMaps Integration
+  - Payment (Paypal, checkout process)
+- Added context (UserProvider)
+  - using Hooks
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Mind-Map
 
-### Making a Progressive Web App
+![](https://i.imgur.com/WdNN5oO.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-### Advanced Configuration
+<style>
+code.blue {
+  color: #337AB7 !important;
+}
+code.orange {
+  color: #F7A004 !important;
+}
+</style>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- <code class="orange">const [toggle, setToggle] = useState(false)</code>: Toggle SignUp/Login
 
-### Deployment
+- <code class="blue">sendMessage('event')</code>: Trigger event
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+<b>Toggle Sign Up/Login:</b>
 
-### `yarn build` fails to minify
+```typescript
+import React, { useState } from 'react'
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+{!toggle ?
+<>
+    <AuthForm
+        inputs={inputs}
+        handleChange={handleChange}
+        handleSubmit={handleSignupSubmit}
+        btnText="Signup"
+    />
+    <button onClick={() => setToggle(prevToggle => !prevToggle)}>
+        Already A Member?
+    </button>
+</>
+:
+<>
+    <AuthForm
+        inputs={inputs}
+        handleChange={handleChange}
+        handleSubmit={handleLoginSubmit}
+        btnText="Login"
+    />
+    <button onClick={() => setToggle(prevToggle => !prevToggle)}>
+        Not A Member?
+    </button>
+</>\\,
+}
+```
+
+---
+
+useState/useContext
+
+```typescript
+import React, { useState } from "react";
+
+// setup channel in different page environment, once
+export const useContext = React.createContext();
+```
+
+---
+
+```typescript
+// Login w/Axios call
+const login = credentials => {
+  axios
+    .post("/auth/login", credentials)
+    .then(res => {
+      const { user, token } = res.data;
+      localStorage.setItem("user", JSON.stringify("user"));
+      localStorage.setItem("token", token);
+      setUserState(prevUserState => ({
+        ...prevUserState,
+        user: user,
+        token: token
+      }));
+    })
+    .catch(err => console.log(err));
+};
+```
+
+<br>
+
+```typescript
+// axios get data of Bookings
+const getUserBooking = () => {
+  userAxios
+    .get("/api/book/user")
+    .then(res => {
+      setUserState(prevUserState => ({
+        ...prevUserState,
+        userBooked: res.data
+      }));
+    })
+    .catch(err => console.log(err));
+};
+```
+
+```typescript
+
+---
+
+### Wrap up
+
+- Cross videographer/consumer communication to coordinate plans
+- Smooth booking process to solve traveling pains
+
+---
+
+### API
+
+This project will be built using a Mock Data (Data present in local MongoDB):
+
+
+- [My GitHub](https://github.com/bellmarc/vidly-memories-app)
+```
