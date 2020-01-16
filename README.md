@@ -4,14 +4,15 @@ tags: Templates, Talk
 description: View the slide with "Slide Mode".
 ---
 
-# React.js FullStack Vidly App Project Proposal
+# React.js FullStack Vidly App Project
 
 <!-- Put the link to this slide here so people can follow -->
 
 slide: https://hackmd.io/p/vidly-talk-slide
 
-<iframe src="https://drive.google.com/file/d/1B8p1KEQ82G6dAKJjqdtIR3JO8Nh2kgx7/preview" width="640" height="480"></iframe>
----
+```typescript
+[Vidly screenshot](https://i.imgur.com/tOnKHfR.png)
+```
 
 
 ### What I'm Building:
@@ -22,16 +23,15 @@ The audience would reach international adventurers, social media-influencers, co
 
 ---
 
-## Who am I?
+## Technologies Used
 
-- Nice to e-meet you. I'm Marc, a Software engineer
-- Technologies include: React.js, Express, Node.js, mongoose, and MongoDB
+-  React.js, Express, Node.js, mongoose, and MongoDB
 
 ---
 
 ### MVP(Minimum Viable Product):
 
-- A registration/login feature complete with JWT(JSOn Web Token) authentication, brief graphic explanation of the service offered, a list of popular travel locations w/ filter for associated professionals who can capture hi-quality memories(videos) for users.
+- A registration/login feature complete with JWT(JSON Web Token) authentication, brief graphic explanation of the service offered, a list of popular travel locations w/ filter for associated professionals who can capture hi-quality memories(videos) for users.
 
 #### User stories
 
@@ -48,32 +48,30 @@ The audience would reach international adventurers, social media-influencers, co
 Testimonial page
 -Make fake pros from diff locations & only locations that are signed up by pros will be found by customers.
 
-##### Other future features:
+##### Other features to be added:
 
 - Book to Checkout (Stripe/Paypal)integration
-- Calender for available dates
-- -Verification (Pros)
-- Chat
+- Calender for booking dates
+- Verification System(Pros)
+- C2C communicatioon system
 - Mailchimp integration
-- Splash page w/Video
-- Vetting/Sign up process | Portfolio upload submission for videographer professionals
+- Vetting/Sign-up process | Portfolio upload submission for videographer professionals
 - Request a location for services (user) Search feature
 - FAQ
-- Customer Service (bot/live/remote service)
+- Customer Service option (bot/live/remote service)
 
 ---
 
 ## Content script
 
-- Minimum of Home, Search, Payment linked pages
-- Two Different APIs
+- Minimum of Register/Login Authentication
 - React Components:
   - Home (BookNow, Destinations)
   - About (brief intro on front page)
   - Search [popularLocations, listOfVideographersByLocation, DestinationsByName],
   - GoogleMaps Integration
-  - Payment (Paypal, checkout process)
-- Added context (UserProvider)
+  - Payment (Paypal, Checkout process)
+  - Added context (UserProvider)
   - using React Hooks
 
 ---
@@ -93,11 +91,11 @@ code.orange {
 }
 </style>
 
-- <code class="orange">const [toggle, setToggle] = useState(false)</code>: Toggle SignUp/Login
+- <code class="orange">const [toggle, setToggle] = useState(false)</code>: Toggle Sign-Up/Login
 
 - <code class="blue">sendMessage('event')</code>: Trigger event
 
-<b>Toggle Sign Up/Login:</b>
+<b>Toggle Sign-Up/Login:</b>
 
 ```typescript
 import React, { useState } from 'react'
@@ -131,7 +129,7 @@ import React, { useState } from 'react'
 
 ---
 
-useState/useContext
+useState/useContext sample
 
 ```typescript
 import React, { useState } from "react";
@@ -184,15 +182,15 @@ const getUserBooking = () => {
 
 ### Wrap up
 
-- Cross videographer/consumer communication to coordinate plans
-- Smooth booking process to solve traveling pains
+- Will need a Cross videographer/consumer communication ability to coordinate plans
+- Must include a Smooth booking process to solve user traveling pains
 
 ---
 
 ### MongoDB Data
 
-This project will be built using Mock Data (Data present in local MongoDB):
+This project is built using Mock Data (Data present in local MongoDB):
 ---
 ```
-[My GitHub](https://github.com/bellmarc/vidly-memories-app)
+[My GitHub](https://github.com/bellmarc)
 
