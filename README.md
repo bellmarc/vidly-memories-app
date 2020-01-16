@@ -9,11 +9,10 @@ description: View the slide with "Slide Mode".
 <!-- Put the link to this slide here so people can follow -->
 
 slide: https://hackmd.io/p/vidly-talk-slide
+---
+<img src="https://i.imgur.com/bHM3Z0r.png" width="640" height="480"/>
 
-```typescript
-<img src="https://i.imgur.com/bHM3Z0r.png" width="640" height="480" />
-```
-
+---
 ### What I'm Building:
 
 A platform to connect professional videographers/cinematographers to users who seek their services to capture their special moments (weddings), family memories, or document their journey abroad. Packages available | Specific timeframe, dates/specific time up to individual videographers. Local videographers know the areas well and can take individuals or families to best shooting locations.
