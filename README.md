@@ -11,7 +11,7 @@ description: View the slide with "Slide Mode".
 slide: https://hackmd.io/p/vidly-talk-slide
 
 ```typescript
-![Vidly screenshot](https://i.imgur.com/bHM3Z0r.png)
+![Vidly screenshot]<img src="https://i.imgur.com/bHM3Z0r.png" width="640" height="480"/>
 ```
 
 
