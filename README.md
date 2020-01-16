@@ -11,9 +11,8 @@ description: View the slide with "Slide Mode".
 slide: https://hackmd.io/p/vidly-talk-slide
 
 ```typescript
-![Vidly screenshot]<img src="https://i.imgur.com/bHM3Z0r.png" width="640" height="480"/>
+<img src="https://i.imgur.com/bHM3Z0r.png" width="640" height="480" />
 ```
-
 
 ### What I'm Building:
 
@@ -25,7 +24,7 @@ The audience would reach international adventurers, social media-influencers, co
 
 ## Technologies Used
 
--  React.js, Express, Node.js, mongoose, and MongoDB
+- React.js, Express, Node.js, mongoose, and MongoDB
 
 ---
 
@@ -192,5 +191,5 @@ const getUserBooking = () => {
 This project is built using Mock Data (Data present in local MongoDB):
 ---
 ```
-[My GitHub](https://github.com/bellmarc)
 
+[My GitHub](https://github.com/bellmarc)
