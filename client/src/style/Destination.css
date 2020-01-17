@@ -54,7 +54,7 @@
 
 @media (min-width: 500px) and (max-width: 767px) {
   .destination-header-text {
-    font-size: 40px;
+    font-size: 64px;
   }
   .location-text {
     display: inline-block;
@@ -68,7 +68,7 @@
 
 @media (min-width: 768px) and (min-width: 1200px) {
   .destination-header-text {
-    font-size: 48px;
+    font-size: 64px;
   }
   .location-text {
     margin-left: 60px;
