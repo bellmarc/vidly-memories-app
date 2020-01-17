@@ -9,7 +9,7 @@ const Landing = (props)=> {
 
     return (
         <div className="landing-container">
-                <LazyHero className="lazy-hero" imageSrc={HeroImg} alt="Married couple at the beach during sunset">
+                <LazyHero className="lazy-hero" imageSrc={HeroImg} opacity={0}alt="Married couple at the beach during sunset">
             <div className="overlay">
                 <div className="overlay-text">
                     {/* <h1>Vidly</h1> */}
