@@ -51,7 +51,7 @@ Testimonial page
 - Book to Checkout (Stripe/Paypal)integration
 - Calender for booking dates
 - Verification System(Pros)
-- C2C communicatioon system
+- C2C communication system
 - Mailchimp integration
 - Vetting/Sign-up process | Portfolio upload submission for videographer professionals
 - Request a location for services (user) Search feature
