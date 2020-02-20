@@ -33,7 +33,7 @@ class BookingProvider extends React.Component {
 
         getProfessionals = (location) => {
             console.log(location)
-            userAxios.get(`/api/user/location/${location}`)
+            userAxios.get(`/api/user/location/${encodeURI (location)}`)
             .then( res => {
                 console.log(res.data)
                 this.setState({
